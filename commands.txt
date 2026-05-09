@@ -1,0 +1,83 @@
+# ============================================
+# UPDATE SYSTEM
+# ============================================
+
+sudo apt update
+sudo apt upgrade -y
+
+
+# ============================================
+# INSTALL PYTHON + PIP
+# ============================================
+
+sudo apt install python3 python3-pip -y
+
+
+# ============================================
+# VERIFY INSTALLATION
+# ============================================
+
+python3 --version
+pip3 --version
+
+
+# ============================================
+# UPGRADE PIP
+# ============================================
+
+python3 -m pip install --upgrade pip
+
+
+# ============================================
+# INSTALL JUPYTER
+# ============================================
+
+python3 -m pip install notebook jupyterlab ipykernel
+
+
+# ============================================
+# INSTALL REQUIRED LIBRARIES
+# ============================================
+
+python3 -m pip install pandas
+python3 -m pip install numpy
+python3 -m pip install matplotlib
+python3 -m pip install scikit-learn
+python3 -m pip install tensorflow-cpu
+
+
+# ============================================
+# OPTIONAL USEFUL LIBRARIES
+# ============================================
+
+python3 -m pip install seaborn
+python3 -m pip install scipy
+
+
+# ============================================
+# VERIFY ALL LIBRARIES
+# ============================================
+
+python3 -c "import pandas"
+python3 -c "import numpy"
+python3 -c "import matplotlib"
+python3 -c "import sklearn"
+python3 -c "import tensorflow"
+
+
+# ============================================
+# START JUPYTER NOTEBOOK
+# ============================================
+
+jupyter notebook --no-browser
+
+
+# ============================================
+# START JUPYTER LAB
+# ============================================
+
+jupyter lab --no-browser
+
+
+to start jupyter notebook command : 
+jupyter notebook
